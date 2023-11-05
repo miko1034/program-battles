@@ -22,7 +22,9 @@ class blockActions:
         pluspercentage = f"1.0{random.randint(3,20)}"
         finalhealth = health * float(pluspercentage)
         return round(finalhealth)
-    
+    #doenst work yet
+    #pls try fix asap
+    #this is just a testing thingy btw (like a debug/dev tool)
     def applydamage(self,damage,health):
         return health - damage
         

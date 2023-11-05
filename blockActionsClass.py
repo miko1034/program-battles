@@ -1,4 +1,5 @@
 import random
+from blockinit import blockInit
 
 class blockActions:
     def __init__(self,name,health):
@@ -21,3 +22,7 @@ class blockActions:
         pluspercentage = f"1.0{random.randint(3,20)}"
         finalhealth = health * float(pluspercentage)
         return round(finalhealth)
+    
+    def applydamage(self,damage,health):
+        return health - damage
+        

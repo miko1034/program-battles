@@ -1,6 +1,6 @@
-import random
+from block import Block
 
-def createblock(name):
-    health = random.randint(50,100)
-    theblock = [name,health]
-    return theblock
+def blockinit():
+    starthealth = "100"
+    block = Block(starthealth)
+    return block

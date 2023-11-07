@@ -1,4 +1,6 @@
-class blockInit:
-    def __init__(self,name,health):
-        self.name = name
-        self.health = health
+from block import Block
+
+def blockinit():
+    starthealth = "100"
+    block = Block(starthealth)
+    return block

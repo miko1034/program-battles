@@ -26,5 +26,6 @@ class blockActions:
     #pls try fix asap
     #this is just a testing thingy btw (like a debug/dev tool)
     def applydamage(self,damage,health):
-        return health - damage
+        newhealth = round(health - damage)
+        return newhealth
         

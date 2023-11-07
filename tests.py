@@ -12,7 +12,9 @@ print(block1.name)
 print(block1.health)
 damage = 70
 print(f"going to apply {damage} damage to {block1.name}")
+actions.applydamage(damage)
 print(f"{block1.name} health is now {block1.health}")
+#testing code
 while True:
     usrinp = input("a")
     if usrinp == "a":

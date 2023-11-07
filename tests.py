@@ -1,22 +1,9 @@
-from blockActionsClass import blockActions
-from blockinit import blockInit
+from blockinit import createblock
 
-#creation of block1
-block1 = blockInit("block1", 100)
+blockList = []
 
-#init
-actions = blockActions(block1.name,block1.health)
+for i in range(0,4):
+    blockList.append(createblock("john"+str(i+1)))
 
-#print basic info of block1
-print(block1.name)
-print(block1.health)
-damage = 70
-print(f"going to apply {damage} damage to {block1.name}")
-actions.applydamage(damage)
-print(f"{block1.name} health is now {block1.health}")
-#testing code
-while True:
-    usrinp = input("a")
-    if usrinp == "a":
-        actions.regenhealth(block1.health)
-        print(block1.health)
+
+print(blockList)

@@ -1,4 +1,6 @@
-class blockInit:
-    def __init__(self,name,health):
-        self.name = name
-        self.health = health
+import random
+
+def createblock(name):
+    health = random.randint(50,100)
+    theblock = [name,health]
+    return theblock

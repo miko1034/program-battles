@@ -1,11 +1,12 @@
 from block import Block
 from test import block1,block2
 
+block = Block()
 
-def attack(initiator,taget,damage):
-    target = 
-    target.health()
-    pass
+def attack(target,damage):
+    block = Block(target)
+    block.changehealth(damage)
+    
     #work on this next pls :)
 
 #

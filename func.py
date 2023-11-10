@@ -2,7 +2,9 @@ from block import Block
 from test import block1,block2
 
 
-def attack():
+def attack(initiator,taget,damage):
+    target = 
+    target.health()
     pass
     #work on this next pls :)
 

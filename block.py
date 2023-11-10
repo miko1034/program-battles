@@ -1,7 +1,6 @@
 class Block:
-    def __init__(self, health,name):
+    def __init__(self, health):
         self.health = health
-        self.name = name
 
     def changehealth(self,currenthealth, desiredchange):
         self.health = int(currenthealth) + int(desiredchange)

@@ -1,6 +1,7 @@
 from block import Block
+from blockinit import multipleblockcreation
 
-block = Block(0)
+#block = Block(0)
 
 #def attack(target,damage):
 #    block = Block(target)

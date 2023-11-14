@@ -1,6 +1,13 @@
 from block import Block
 
-block = Block(0)
+#block = Block(0)
+
+def multipleblockcreation(count):
+    list = []
+    for i in range(count):
+        block = blockInit(f"block{i}",100)
+        list.append(block)
+    return list
 
 #def attack(target,damage):
 #    block = Block(target)

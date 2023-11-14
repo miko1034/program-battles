@@ -8,8 +8,5 @@ class Block:
         self.health = int(currenthealth) + int(desiredchange)
         return str(self.health)
 
-def blockinit():
-    starthealth = f"{random.randint(75,100)}"
-    block = Block(starthealth)
-    return block
+
 

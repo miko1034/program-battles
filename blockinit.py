@@ -1,5 +1,5 @@
 class blockInit:
-    def __init__(self,name,health):
+    def __init__(self,name):
         self.name = name
         self.health = health
 
@@ -10,3 +10,5 @@ def multipleblockcreation(count):
         block = blockInit(f"block{i}",100)
         list.append(block)
     return list
+=======
+        self.health = 100

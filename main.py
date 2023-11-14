@@ -1,8 +1,11 @@
 from block import Block
-from blockinit import blockinit
+from blockinit import blockInit
+from func import multipleblockcreation
 
-block1 = blockinit()
-block2 = blockinit()
+blocks = multipleblockcreation(3)
+for i in range(len(blocks)):
+    print(blocks[i].name, blocks[i].health)
+
 
 if __name__ == "__main__":
     pass

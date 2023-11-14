@@ -1,7 +1,6 @@
 from block import Block
-from blockinit import blockInit
 
-block = Block(0)
+#block = Block(0)
 
 def multipleblockcreation(count):
     list = []

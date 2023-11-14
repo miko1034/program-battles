@@ -1,4 +1,4 @@
 class blockInit:
-    def __init__(self,name,health):
+    def __init__(self,name):
         self.name = name
-        self.health = health
+        self.health = 100

@@ -1,8 +1,5 @@
 from block import Block
-from blockinit import blockinit
-
-block1 = blockinit()
-block2 = blockinit()
+from blockinit import blockInit
 
 if __name__ == "__main__":
     pass

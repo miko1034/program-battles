@@ -1,16 +1,7 @@
 from block import Block
-from blockinit import blockInit
-from func import multipleblockcreation
+from func import makeMultipleBlocks
 
-blocks = multipleblockcreation(3)
+blocks = makeMultipleBlocks(3)
 for i in range(len(blocks)):
+    blocks[i].setname(f"Block {i}")
     print(blocks[i].name, blocks[i].health)
-
-
-if __name__ == "__main__":
-    pass
-
-#
-#           COMPLETELY IGNORE THIS FILE UNTIL ALL THE BLOCK PROPERTIES
-#           AND ACTIONS ARE COMPLETELY FINISHED!!!!!!!!!
-#

@@ -1,12 +1,13 @@
 import random
 
 class Block:
-    def __init__(self, health):
-        self.health = health
+    def __init__(self, name=""):
+        self.health = random.randint(70,100)
+        self.name = name
 
-    def changehealth(self,currenthealth, desiredchange):
-        self.health = int(currenthealth) + int(desiredchange)
-        return str(self.health)
+    def changehealth(self,desiredchange):
+        self.health += desiredchange
+        return self.health
 
-
-
+    def changename(self,somename):
+        self.name = somename 

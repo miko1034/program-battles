@@ -1,7 +1,11 @@
 from block import Block
-from func import makeMultipleBlocks
+from func import makeMultipleBlocks, main
 
-blocks = makeMultipleBlocks(3)
+BLOCK_COUNT = 2
+
+blocks = makeMultipleBlocks(BLOCK_COUNT)
 for i in range(len(blocks)):
-    blocks[i].setname(f"Block {i}")
+    blocks[i].changename(f"Block {i}")
     print(blocks[i].name, blocks[i].health)
+
+main()
